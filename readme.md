@@ -1,4 +1,4 @@
-# WPF XAML World MAP 
+# WPF XAML World MAP High Resolution
 
 Countries/ Areas listed as paths
 
