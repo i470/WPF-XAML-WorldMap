@@ -5,23 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_WorldMap"
         mc:Ignorable="d"
-        Title="XAML World Map High Resolution W:5350px H:3330px"  Icon="/material-io-baseline_explore_black_18dp.png">
+        Title="XAML World Map High Resolution W:5350px H:3330px"  Icon="/material-io-baseline_explore_black_18dp.png" Height="785" Width="1178">
     <Grid Background="#f6f5f3">
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
             <RowDefinition Height="104*"/>
-          
+
         </Grid.RowDefinitions>
-        <Border Background="#FF555150">
+        <Border Background="#FF1C1C1C">
             <TextBlock Text="XAML World Map High Resolution W:5350px H:3330px" FontSize="30" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#f6f5f3"/>
         </Border>
-       
 
-            <Viewbox x:Name="MAPViewBox"  Stretch="Uniform" Grid.Row="1">
+
+        <Viewbox x:Name="MAPViewBox"  Stretch="UniformToFill" Grid.Row="1" VerticalAlignment="Stretch">
             <local:WorldMapUserControl x:Name="WorldMap" >
-                
+
             </local:WorldMapUserControl>
         </Viewbox>
-     
+
     </Grid>
 </Window>
